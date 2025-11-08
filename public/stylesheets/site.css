@@ -54,14 +54,29 @@ body{
 }
 
 /* custom buttons */
-.btn-brand{
-  background:var(--maroon);
-  color:#fff;
-  border:none;
+.btn-brand {
+  background: var(--maroon);
+  color: #fff;
+  border: 2px solid var(--maroon);
+  transition: all 0.25s ease;
 }
-.btn-brand:hover{
-  filter:brightness(.95);
-  color:#fff;
+.btn-brand:hover {
+  background: transparent;
+  color: #000;
+  border: 3px solid #000;
+}
+
+/* transparent contact button — turns black on hover */
+.btn-outline-dark {
+  background: transparent;
+  border: 2px solid var(--maroon);
+  color: #000;
+  transition: all 0.25s ease;
+}
+.btn-outline-dark:hover {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
 }
 
 /* footer */
