@@ -7,7 +7,6 @@ var path = require('path');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');   // our page routes
-var usersRouter = require('./routes/users');   // default sample route
 
 var app = express(); // <-- this line creates the app. without it, app.use blows up
 
@@ -23,7 +22,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
