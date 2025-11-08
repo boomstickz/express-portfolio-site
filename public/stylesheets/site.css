@@ -1,0 +1,4 @@
+/*  site styles */
+body { font-family: system-ui, sans-serif; background:#f8f9fa; }
+h1 { color:#b30000; text-transform: lowercase; }
+.navbar-brand { text-transform: lowercase; letter-spacing: .5px; }
